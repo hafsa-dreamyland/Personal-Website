@@ -18,7 +18,9 @@ It's not a complete nor a perfect website, but it serves as a starting point to 
 
 ## Technologies Used
 For the development of the website: HTML, CSS, JavaScript. 
+
 Other projects are based on: C++, C, etc. 
+
 Other tools I'm currently working on: Unreal Engine 5.2 (UE5) 
 
 ## License
