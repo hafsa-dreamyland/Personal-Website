@@ -17,9 +17,9 @@ On the website are listed some of my projects, but the portfolio space could als
 It's not a complete nor a perfect website, but it serves as a starting point to further learn and develop ones ideas and future projects.
 
 ## Technologies Used
-For the development of the website: HTML, CSS, JavaScript.
-Other projects are based on: C++, C, etc.
-Other tools I'm currently working on: Unreal Engine 5.2 (UE5)
+For the development of the website: HTML, CSS, JavaScript. 
+Other projects are based on: C++, C, etc. 
+Other tools I'm currently working on: Unreal Engine 5.2 (UE5) 
 
 ## License
 Specify the license under which your code is shared. For example, you might choose an open-source license like MIT.
