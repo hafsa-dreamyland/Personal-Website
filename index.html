@@ -5,13 +5,14 @@
 <meta http-equiv="X-UA-Compatible" content="IE=edge" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 <meta name="description" content="I'm is a computer-engineering student. Check out my website to get to know me and my projects."/>
-<meta name="keywords" content="Web developer, front-end developer, front-end, back-end, Sadik Hafsa, full-stack, full-stack develeper, computer-engineering, engineer"/>
+<meta name="keywords" content="engineer, web developer, Sadik Hafsa, full-stack develeper, computer-engineering"/>
 <meta name="author" content="Sadik Hafsa" />
 
  <!-- Open Graph Meta Tags -->
  <meta property="og:title" content="Sadik Hafsa | Full-stack developer | Computer-engineer" />
  <meta property="og:description" content="This is a personal website to showcase some projects I've been working on." />
  <meta property="og:type" content="website" />
+ <meta property="og:keywords" content="engineer, web developer, Sadik Hafsa, full-stack develeper, computer-engineering" />
 
 <!--Font Awesome-->
 <link rel="stylesheet" href="assets/css/all.css">
@@ -22,13 +23,28 @@
 <!--My custom css-->
 <link rel="stylesheet" href="assets/css/style.css"/>
 
+<!--FAVICON-->
+<link rel="icon" type="image/x-icon" href="assets/images/favicon.ico"/>
 <title>Sadik Hafsa | Full-stack developer</title>
 
 </head>
 
 <body>
 <nav class="navbar">
-    <ul class="wrapper">
+    <ul>
+        <li class="hideOnMobile"><a href="#home">Home</a></li>
+        <li class="hideOnMobile"><a href="#about">About Me</a></li>
+        <li class="hideOnMobile"><a href="#portfolio">Portfolio</a></li>
+        <li class="hideOnMobile"><a href="#contacts">Contact me</a></li>
+        <li class="menu-button" onclick=showSidebar()><a href="#home, #about, #portfolio, #contacts"><svg xmlns="http://www.w3.org/2000/svg" height="23" viewBox="0 -960 960 960" width="23">
+            <path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg></a></li>
+
+    </ul>
+</nav> 
+<nav class="sidebar">
+    <ul>
+        <li class="menu-button" onclick=hideSidebar()><a href="#home, #about, #portfolio, #contacts"><svg xmlns="http://www.w3.org/2000/svg" height="26" viewBox="0 -960 960 960" width="26">
+            <path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg></a></li>
         <li><a href="#home">Home</a></li>
         <li><a href="#about">About Me</a></li>
         <li><a href="#portfolio">Portfolio</a></li>
@@ -39,22 +55,22 @@
 <section id="home">
     <div class="main">
         <h1 class="headings">I AM <br> HAFSA SADIK</h1>
-        <h2 id="carousel-words" class="headings1">a</h2>
+        <h2 id="carousel-words">a</h2>
             <br>
         <button class="btn">
-            <a href='assets/hire_me/index.html'>Hire me</a>
+            <a href='assets/cv/index.html' target="_blank">Hire me</a>
         </button>
     </div>
 </section>
 
 <section id="about">
-    <h1 class="headings3">ABOUT ME</h1>
+    <h2 class="headings">ABOUT ME</h2>
     <div id="pic">
-        <img src="./assets/images/hire_me_img/img1.jpg" alt="Home Image">
+        <img src="./assets/images/contact_img/img1.jpg" alt="Home Image">
         <div id="intro">
-            <h2 class="heading-secabout">Hi, I'm HAFSA SADIK!</h2>
-            <h3 class="heading-secabout">A Computer-engineering student based in Italy</h3><hr><br>
-            <p class="psec-about">I'm a dreamer who likes to read, learn and make things about and with technology.<br>
+            <h3 class="heading-secabout">Hi, I'm HAFSA SADIK!</h3>
+            <p class="heading-secabout">A Computer-engineering student based in Italy</p><hr><br>
+            <p class="psec-about">I'm passionate about reading, learning and making things about and with technology.<br>
                 I like to <strong>resolve</strong> problems,<strong> create</strong> smart user interfaces and <strong>imagine</strong> useful solutions
                 to new problems.<br>
                 I'm also a consumer of: <strong> neural networks</strong> verification researches, <strong>criminology</strong> studies, 
@@ -68,41 +84,41 @@
 </section>
 
 <section id="portfolio">
-    <h1 class="headings">PORTFOLIO</h1>
+    <h2 class="headings">PORTFOLIO</h2>
     <p class="psec">These are some projects I've worked on</p>
     <div class="pcontainer">
         <div class = "pcard">
-            <a href="https://github.com/hafsa-dreamyland/Tribute-Page-example">
+            <a href="https://github.com/hafsa-dreamyland/Tribute-Page-example" target="_blank">
                 <img class="img-port" src="assets/images/portfolio/img1.jpg" alt="Rita Levi Montalcini">
                 <div class="port-intro">
-                    <h1 class="porh">Tribute Page</h1>
+                    <p class="porh"><strong>Tribute Page</strong></p>
                     <p class="portp">Tribute page in honor of the neuroscientist Rita Levi Montalcini.</p>
                 </div>
             </a>
         </div>
         <div class = "pcard">
-            <a href="https://github.com/hafsa-dreamyland/Build-a-Survey-Form">
+            <a href="https://github.com/hafsa-dreamyland/Build-a-Survey-Form" target="_blank">
             <img class="img-port" src="assets/images/portfolio/img4.jpg" alt="Form">
             <div class="port-intro">
-                <h1 class="porh">Survey-Form</h1>
+                <p class="porh"><strong>Survey-Form</strong></p>
                 <p class="portp"> Animal awereness Survey-Form that collects data from users.</p>
             </div>
             </a>
         </div>
         <div class = "pcard">
-            <a href="https://github.com/hafsa-dreamyland/RIOT/tree/feedback-scheduling/examples/RRTester">
+            <a href="https://github.com/hafsa-dreamyland/RIOT/tree/feedback-scheduling/examples/RRTester" target="_blank">
             <img class="img-port" src="assets/images/portfolio/img2.png" alt="RIOT-OS development project">
             <div class="port-intro">
-                <h1 class="porh">RIOS-OS sched project</h1>
+                <p class="porh"><strong>RIOS-OS sched project</strong></p>
                 <p class="portp"> Development of a scheduler for RIOT-OS with a feedback-scheduling policy</p>
             </div>
             </a>
         </div>
         <div class = "pcard">
-            <a href="https://github.com/hafsa-dreamyland">
+            <a href="https://github.com/hafsa-dreamyland" target="_blank">
             <img class="img-port" src="assets/images/portfolio/img3.jpg" alt="Git-Hub pages">
             <div class="port-intro">
-                <h1 class="porh">Git-Hub</h1>
+                <p class="porh"><strong>Git-Hub</strong></p>
                 <p class="portp"> Find other projects on my Git-Hub page</p>
             </div>
             </a>
@@ -112,41 +128,41 @@
 
 
 <section id="contacts">
-    <div><h1 class="heading-contact">CONTACT ME</h1></div>
+    <div><h2 class="heading-contact">CONTACT ME</h2></div>
     <div class="container">
         <div class="box1">
             <div class="card">
                 <div class="profile-image">
                     <div class="inner-area"></div>
                 </div>
-                <div class="title"><h1>Sadik Hafsa</h1></div>
-                <div class="about"><h2>Full-Stack Developer</h2>
-                    <p>Student based in Italy, </p>
-                    <p>open for internships and</p>
-                    <p>software engineering projects.</p>
+                <div class="title"><p>Sadik Hafsa</p></div>
+                <div class="about"><p>Full-Stack Developer</p>
+                    <p>Student based in Italy, <br>
+                    open for internships and<br>
+                    software engineering projects.</p>
                 </div>
                 <div class="social-icons">
-                    <a href="https://www.facebook.com/hafsa.sadik.353"><i class="fab fa-facebook-f"></i></a>
-                    <a href="https://www.instagram.com/_h_dreamer/"><i class="fab fa-instagram"></i></a>
-                    <a href="https://www.linkedin.com/in/hafsa-sadik/"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://github.com/hafsa-dreamyland"><i class="fab fa-github"></i></a>
+                    <a href="https://www.facebook.com/hafsa.sadik.353" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                    <a href="https://www.instagram.com/_h_dreamer/" target="_blank"><i class="fab fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/hafsa-sadik/" target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://github.com/hafsa-dreamyland" target="_blank"><i class="fab fa-github"></i></a>
                 </div>
             </div>
         </div>
             
     <div class="contact-info">
-            <h2>Hello there!</h2>
+            <p class="ptitle"><strong>Hello there!</strong></p>
             <p>Let's grab a coffee together and chat.</p>
             <p>Ideas, research, anything related to science and technology!
-                Let's have a nice conversation about it.</p>
-            <p>Oh, if it's about races you're in for a rabbit hole of non-stop chit-chat, especially if it's about MotoGP, 
+                Let's have a nice conversation about it.<br>
+            Oh, if it's about races you're in for a rabbit hole of non-stop chit-chat, especially if it's about MotoGP, 
                 Formula1 or Nascar. Even though I'd say motorcycles are my first love and ultimatetly the thing I'd never 
                 stop talking about.
-            </p>
-            <p>I'm here to learn and expand my knowledge.</p>
-            <p>You can find me through this card on the left and connect with me on my socials!</p>
-            <p>Hope to here from you soon!</p>
-            <p>Bye! </p>
+            <br>
+            I'm here to learn and expand my knowledge.<br>
+            You can find me through this card on the left and connect with me on my socials!<br>
+            Hope to here from you soon!<br>
+            Bye!</p>
         </div>
     </div>
 </section>   
